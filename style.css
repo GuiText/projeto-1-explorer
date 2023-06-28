@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+
+  text-align: center; /* alinha o texto e mais alguns elementos ao centro */
+}
+
+#hero {
+  /* definindo uma largura para a div hero ela perde o alinhamento feito com 
+  text-align no body, o conteudo dentro ainda está alinhado, 
+  mas a div hero perde alinhamento */
+  width: 592px;
+  /* aqui alinhamos novamente a div ao centro da tela */
+  margin: 0 auto 72px;
+}
+
+#hero img {
+  margin-bottom: 72px;
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 49px;
+  line-height: 56px; /* altura de linha */
+  font-weight: normal; /* peso da fonte */
+
+  margin-bottom: 32px;
+}
+
+h1 span {
+  font-weight: bold;
+}
+
+span, a {
+  color: #FF9900;
+}
+
+p, .line {
+  color: #7D7987;
+
+  font-size: 14px;
+  line-height: 28px;
+}
+
+
+/* pega o a que anterior a ele tem um a */
+#footer a + a {
+  margin-left: 28px;
+}
+
+.line {
+  width: 568px;
+  height: 0px;
+
+  margin: 0 auto 8px;
+
+  border: 1px #ECEFF2 solid;
+}
+
+#balls { 
+  /* position: fixed; habilita algumas propriedades... */
+  /* o position ele adiciona outro contexto na tela
+  ele "sobrepoem" o conteudo da página, criando uma nova camada */
+  position: fixed;
+  bottom: 0px;
+  right: 0px;  
+}
